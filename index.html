@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VioletScreen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <span class="emoji">🎞️</span>
+            <h1>VioletScreen</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск фильмов, сериалов...">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" data-filter="all">ВСЕ</a></li>
+                <li><a href="#" data-filter="movie">Фильмы</a></li>
+                <li><a href="#" data-filter="series">Сериалы</a></li>
+                <li><a href="#" data-filter="anime">Аниме</a></li>
+                <li><a href="#" data-filter="cartoon">Мультфильмы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2>Популярные</h2>
+            <div class="cards-container" id="popularCards"></div>
+        </section>
+
+        <section class="section">
+            <h2>Новинки</h2>
+            <div class="cards-container" id="newCards"></div>
+        </section>
+
+        <section class="section">
+            <h2>Смотрят сейчас</h2>
+            <div class="cards-container" id="trendingCards"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 VioletScreen | Разработано с любовью</p>
+        <a href="admin.html" class="admin-link">Админ-панель</a>
+    </footer>
+
+    <div class="modal" id="playerModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div id="playerContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
